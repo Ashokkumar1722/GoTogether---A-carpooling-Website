@@ -1,0 +1,78 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.8rem;
+    margin-top: 30px;
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    color: #ffcc00;
+}
+
+td {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Status Colors */
+.approved {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.rejected {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.pending {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    table {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

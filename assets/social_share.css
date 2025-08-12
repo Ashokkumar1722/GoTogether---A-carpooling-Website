@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+   
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.8s ease-out;
+}
+
+h1 {
+    background: linear-gradient(135deg, #FFD700, #FF6347);
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #FFD700;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #f0f0f0;
+}
+
+strong {
+    color: #4CAF50;
+}
+
+.social-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+
+/* Button Styles with Glowing Effects */
+.whatsapp {
+    background: linear-gradient(135deg, #25D366, #1ebe57);
+}
+.whatsapp:hover {
+    background: #25D366;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8);
+    transform: translateY(-3px);
+}
+
+.twitter {
+    background: linear-gradient(135deg, #1DA1F2, #0078D7);
+}
+.twitter:hover {
+    background: #1DA1F2;
+    box-shadow: 0 4px 20px rgba(29, 161, 242, 0.8);
+    transform: translateY(-3px);
+}
+
+.facebook {
+    background: linear-gradient(135deg, #3b5998, #4a69bd);
+}
+.facebook:hover {
+    background: #3b5998;
+    box-shadow: 0 4px 20px rgba(59, 89, 152, 0.8);
+    transform: translateY(-3px);
+}
+
+.linkedin {
+    background: linear-gradient(135deg, #0077b5, #004b87);
+}
+.linkedin:hover {
+    background: #0077b5;
+    box-shadow: 0 4px 20px rgba(0, 119, 181, 0.8);
+    transform: translateY(-3px);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

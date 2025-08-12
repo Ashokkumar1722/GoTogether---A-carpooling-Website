@@ -1,0 +1,136 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e0f2f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+    width: 700px;
+    text-align: center;
+    max-height: 80vh; /* Limit the container height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+}
+h1{
+    color: #e0f7fa;
+    font-style: italic;
+    font-size: 3rem;
+
+}
+span{
+    color: #00d7e6;
+    text-shadow:2px 2px #dc099d;
+}
+
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #e60077;
+    text-shadow:2px 2px #07d7e6;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #0b9dad;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+input, select {
+    background: transparent;
+    color: #e0f7fa;
+    border: 2px solid #07d7e6;
+}
+
+button {
+    background: linear-gradient(135deg, #61e2ff, #dc099d);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #c74341, #2f94d3);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 15px rgba(15, 255, 123, 0.8);
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5252;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #d32f2f;
+}
+
+
+.result, .alert {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: 2px solid #00d7e6;
+}
+
+.alert {
+    
+    color: #ff5252;
+}
+
+.result {
+    color: #b3ffb3;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5252;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.back-button:hover {
+    background: #d32f2f;
+}
+
+
+
+

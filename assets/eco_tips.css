@@ -1,0 +1,50 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.1);
+
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #f4f4f4;
+}
+
+/* Eco Box */
+.eco-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Strong Text */
+p strong {
+    color: #ffeb3b;
+    font-size: 18px;
+}
+
+/* Tree Icon */
+.tree-icon {
+    font-size: 40px;
+}

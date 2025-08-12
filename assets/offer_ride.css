@@ -1,0 +1,172 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    font-style: italic;
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+}
+span{
+    color:aqua;
+    text-shadow:2px 4px #ff1900;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+  
+    padding: 25px;
+    width: 800px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.bookings {
+    background: transparent;
+    padding: 25px;
+    width: 800px;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+.booking{
+    padding: 25px;
+    width: 800px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.3);
+    border: 2px solid #ffcc00;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ff9900, #ff6600);
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 153, 0, 0.7);
+}
+
+/* Table Styling */
+table {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+td {
+    background: transparent;
+}
+
+tr:nth-child(even) td {
+    background: transparent;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons for Approve & Reject */
+form button {
+    width: 45%;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 25px;
+}
+
+form button:first-child {
+    background: #4caf50;
+}
+
+form button:first-child:hover {
+    background: #388e3c;
+}
+
+form button:last-child {
+    background: #ff1900;
+}
+
+form button:last-child:hover {
+    background: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+}

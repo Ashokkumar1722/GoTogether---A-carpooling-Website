@@ -1,0 +1,142 @@
+body {
+    background:  linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+h4 {
+    text-shadow: 3px 3px 8px rgb(255, 0, 179);
+    font-size: 2rem;
+    animation: bounce-in 1s ease-out;
+}
+
+@keyframes bounce-in {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+form {
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: brightness();
+    backdrop-filter: blur(15px);
+    border: 3px solid #ffffff33;
+    border-radius: 25px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 800px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    position: relative;
+    animation: slide-down 0.8s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 12px;
+    background: #e3f2fd;
+    color: #333;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px 0;
+    background: linear-gradient(90deg, #00b4d8, #0077b6);
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-size: 1.1rem;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #b6004f, #00b4d8);
+    transform: scale(1.08);
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(50px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.container h2 {
+    background: linear-gradient(90deg, #ff4e00, #ec9f05);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 12px;
+    margin-bottom: 18px;
+}
+
+.container p, .container ul {
+    margin: 8px 0;
+    font-size: 1.1rem;
+}
+
+ul li {
+    list-style: none;
+    padding-left: 1.4rem;
+    position: relative;
+}
+
+ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #76c7c0;
+}
+
+p strong {
+    color: #76c7c0;
+}

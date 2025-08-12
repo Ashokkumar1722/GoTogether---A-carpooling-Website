@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="icon" href="assets/images/uu.jpg">
+    <link rel="stylesheet" href="assets\signup.css">
+</head>
+
+<body>
+    <h1>GOTOGETHER</h1>
+    <div class="main">
+        <div class="div2">
+            <h1>Already a User?</h1>
+            <p>Login and Share the ride!</p>
+            <button onclick="document.location='login.html'" id="login">Login</button>
+        </div>
+        <div class="div1">
+            <h1>Sign Up</h1>
+            <form id="signupForm" action="signup.php" method="POST">
+                <label for="user_type">Select User Type:</label>
+                <select id="user_type" name="user_type" required>
+                    <option value="" disabled selected>Select User Type</option>
+                    <option value="passenger">Passenger</option>
+                    <option value="owner">Car Owner</option>
+                </select>
+                <input name="username" placeholder="Username" type="text" required>
+                <input name="email" placeholder="Email" type="email" required>
+                <input name="password" placeholder="Password" type="password" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html> 
